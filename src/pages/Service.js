@@ -7,15 +7,15 @@ import AudiovisualProduction from '../assets/Audiovisual Production.png';
 import DigitalMedia from '../assets/Digital-MediaAI.png';
 export const Service = () => {
   return (
-    <Box px="28" py="20" bg="white">
+    <Box px={['10', '28']} py="20" bg="white">
       <Text color="#752D8D" fontWeight="500" fontSize="32">
         Our Services
       </Text>
       <Grid
         mt="10"
         h="full"
-        templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(3, 1fr)"
+        templateRows={['repeat(1, 1fr)', 'repeat(2, 1fr)']}
+        templateColumns={['repeat(1, 1fr)', 'repeat(3, 1fr)']}
         gap={7}
       >
         <GridItem

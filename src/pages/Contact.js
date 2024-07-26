@@ -19,7 +19,7 @@ import MapImage from '../assets/map.png';
 import { BsBox2Fill } from 'react-icons/bs';
 export const Contact = () => {
   return (
-    <Box px="28" my="20" h="auto">
+    <Box px={['5', '28']} my="20" h="auto">
       <Flex
         position={'relative'}
         justifyContent={'space-between'}
@@ -29,7 +29,7 @@ export const Contact = () => {
         boxShadow={'0px 2px 7.6px 0px #00000026'}
         overflow={'hidden'}
       >
-        <Box w="50%" px="24" pt="10" textAlign={'left'}>
+        <Box w={['100%', '50%']} px={['10', '24']} py="10" textAlign={'left'}>
           <Text fontSize="28" fontWeight="500">
             Contact Us
           </Text>
@@ -108,7 +108,7 @@ export const Contact = () => {
             >
               Send
             </Button>
-            <Flex gap="10">
+            <Flex flexDirection={['column', 'row']} gap="10">
               <Flex gap="2" alignItems={'center'}>
                 <IoCall size="28" />
                 <Box fontSize={'xs'}>
@@ -131,7 +131,7 @@ export const Contact = () => {
             </Flex>
           </form>
         </Box>
-        <Box>
+        <Box display={['none', 'block']}>
           <Image
             top="20"
             right="48"

@@ -28,11 +28,11 @@ export const Hero = () => {
   }, [texts.length]);
 
   return (
-    <Box h="100vh">
+    <Box h={['auto', '100vh']} pb="5">
       <Flex flexDirection={'column'} mt="24">
         <Text
           color="white"
-          fontSize={'72'}
+          fontSize={['52', '72']}
           fontWeight={'700'}
           textTransform={'uppercase'}
         >
