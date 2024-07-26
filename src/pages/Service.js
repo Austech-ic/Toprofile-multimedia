@@ -35,7 +35,7 @@ export const Service = () => {
               src={EventCoverage}
             />
           </Box>
-          <Box px="6" pt="7" textAlign={'left'}>
+          <Box px="6" py="7" textAlign={'left'}>
             <Text fontWeight="500" fontSize={'20'}>
               Event Coverage
             </Text>
@@ -58,7 +58,7 @@ export const Service = () => {
               src={DiscJockey}
             />
           </Box>
-          <Box px="6" pt="7" textAlign={'left'}>
+          <Box px="6" py="7" textAlign={'left'}>
             <Text fontWeight="500" fontSize={'20'}>
               Disc Jockey
             </Text>
@@ -81,7 +81,7 @@ export const Service = () => {
               src={EquipmentRental}
             />
           </Box>
-          <Box px="6" pt="7" textAlign={'left'}>
+          <Box px="6" py="7" textAlign={'left'}>
             <Text fontWeight="500" fontSize={'20'}>
               Equipment Rental
             </Text>
@@ -104,7 +104,7 @@ export const Service = () => {
               src={AudiovisualProduction}
             />
           </Box>
-          <Box px="6" pt="7" textAlign={'left'}>
+          <Box px="6" py="7" textAlign={'left'}>
             <Text fontWeight="500" fontSize={'20'}>
               Audiovisual Production
             </Text>
@@ -126,7 +126,7 @@ export const Service = () => {
               src={DigitalMedia}
             />
           </Box>
-          <Box px="6" pt="7" textAlign={'left'}>
+          <Box px="6" py="7" textAlign={'left'}>
             <Text fontWeight="500" fontSize={'20'}>
               Digital Media/AI
             </Text>
