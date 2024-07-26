@@ -7,7 +7,6 @@ import {
   useDisclosure,
   VStack,
 } from '@chakra-ui/react';
-
 import React from 'react';
 import { IoMdClose } from 'react-icons/io';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -22,6 +21,7 @@ export const Navbar = () => {
       alignItems={'center'}
       justifyContent={'space-between'}
       borderBottom={'1px solid #3E3E3E'}
+      position="relative" // Ensure the navbar has relative positioning for the mobile menu
     >
       <Text
         bg="linear-gradient(90deg, #EC8111 32%, #FFFFFF 100%)"
@@ -67,17 +67,17 @@ export const Navbar = () => {
         <VStack
           display={{ base: 'flex', md: 'none' }}
           pos="absolute"
-          top="0"
+          top="100%" // Adjusted to position below the navbar
           left="0"
           right="0"
           bg="gray.800"
           zIndex="10"
-          p={2}
+          p={4} // Added padding for better spacing
           spacing={4}
           boxShadow="md"
         >
-          <Text>Services</Text>
-          <Text>Contact us</Text>
+          <Text color="white">Services</Text>
+          <Text color="white">Contact us</Text>
           <Button
             fontSize="xs"
             fontWeight={'400'}
