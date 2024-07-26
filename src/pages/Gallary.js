@@ -14,6 +14,7 @@ import Right from '../assets/right.png';
 export const Gallary = () => {
   return (
     <Flex
+      id="gallery"
       px={['10', '28']}
       bg="white"
       justifyContent={'center'}

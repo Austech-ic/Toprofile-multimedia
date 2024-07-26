@@ -28,7 +28,7 @@ export const Hero = () => {
   }, [texts.length]);
 
   return (
-    <Box h={['auto', '100vh']} pb="5">
+    <Box id="home" h={['auto', '100vh']} pb="5">
       <Flex flexDirection={'column'} mt="24">
         <Text
           color="white"

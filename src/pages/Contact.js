@@ -19,7 +19,7 @@ import MapImage from '../assets/map.png';
 import { BsBox2Fill } from 'react-icons/bs';
 export const Contact = () => {
   return (
-    <Box px={['5', '28']} my="20" h="auto">
+    <Box id="contact" px={['5', '28']} my="20" h="auto">
       <Flex
         position={'relative'}
         justifyContent={'space-between'}
