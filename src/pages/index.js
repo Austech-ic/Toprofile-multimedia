@@ -39,8 +39,8 @@ export const MainScreen = () => {
       </Box>
 
       <Service />
-      {/* <Events /> */}
-      {/* <Gallary /> */}
+      <Events />
+      <Gallary />
       <Contact />
       <Footer />
     </Box>

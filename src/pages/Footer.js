@@ -9,10 +9,11 @@ import { TiSocialGooglePlus } from 'react-icons/ti';
 export const Footer = () => {
   return (
     <Box
-      h="50vh"
+      h={{ base: 'auto', md: '50vh' }}
       mt="20"
       _before={{ background: '#001232' }}
-      px="28"
+      px={{ base: '4', md: '28' }}
+      py={{ base: '8', md: '0' }}
       className="curve-top"
     >
       <Flex
@@ -23,12 +24,19 @@ export const Footer = () => {
         h="100%"
         className="content"
       >
-        <Flex w="full" justifyContent={'space-between'} alignItems={'center'}>
+        <Flex
+          w="full"
+          justifyContent={{ base: 'center', md: 'space-between' }}
+          alignItems={'center'}
+          flexDirection={{ base: 'column', md: 'row' }}
+          textAlign={{ base: 'center', md: 'left' }}
+        >
           <Text
             bg="linear-gradient(90deg, #EC8111 32%, #FFFFFF 100%)"
             bgClip="text"
             fontSize="lg"
             fontWeight="bold"
+            mb={{ base: '4', md: '0' }}
           >
             Toprofilemultimedia
           </Text>
@@ -42,11 +50,22 @@ export const Footer = () => {
           </Flex>
         </Flex>
         <Divider border="1px solid #7A7A7A" />
-        <Flex w="full" justifyContent={'space-between'} alignItems={'center'}>
-          <Text color="white" fontSize="sm">
+        <Flex
+          w="full"
+          justifyContent={{ base: 'center', md: 'space-between' }}
+          alignItems={'center'}
+          flexDirection={{ base: 'column', md: 'row' }}
+          textAlign={{ base: 'center', md: 'left' }}
+        >
+          <Text color="white" fontSize="sm" mb={{ base: '4', md: '0' }}>
             Copyright © 2024 Toprofilemultimedia
           </Text>
-          <Flex gap="2" color="white" fontSize="sm">
+          <Flex
+            gap="2"
+            color="white"
+            fontSize="sm"
+            flexDirection={{ base: 'column', md: 'row' }}
+          >
             <Text>Services</Text>
             <Text>Contact Us</Text>
             <Text>Book Now</Text>
