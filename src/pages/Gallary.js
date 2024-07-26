@@ -16,8 +16,9 @@ export const Gallary = () => {
     <Flex
       id="gallery"
       px={['10', '28']}
-      bg="white"
-      justifyContent={'center'}
+      // bg="white"
+
+      w="100%"
       h={['auto', '100vh']}
     >
       <Grid
@@ -25,6 +26,7 @@ export const Gallary = () => {
         templateRows={{ base: 'repeat(5, auto)', md: 'repeat(5, 1fr)' }}
         gap={5}
         w="full"
+        pl={['0', '40']}
       >
         <GridItem
           colStart={{ base: 1, md: 1 }}
@@ -48,7 +50,7 @@ export const Gallary = () => {
           rowStart={{ base: 3, md: 2 }}
           rowEnd={{ base: 4, md: 4 }}
         >
-          <Image src={BottomLeft} />
+          <Image h="full" src={BottomLeft} />
         </GridItem>
         <GridItem
           colStart={{ base: 1, md: 2 }}
@@ -72,7 +74,7 @@ export const Gallary = () => {
           rowStart={{ base: 6, md: 3 }}
           rowEnd={{ base: 7, md: 4 }}
         >
-          <Image src={BottomMiddle} />
+          <Image h="full" src={BottomMiddle} />
         </GridItem>
         <GridItem
           colStart={{ base: 1, md: 2 }}
@@ -81,8 +83,8 @@ export const Gallary = () => {
           rowEnd={{ base: 8, md: 3 }}
         >
           <Flex>
-            <Image w="32" src={Radio1} />
-            <Image w="32" src={Radio2} />
+            <Image w="28" src={Radio1} />
+            <Image w="24" src={Radio2} />
           </Flex>
         </GridItem>
         <GridItem
@@ -99,7 +101,7 @@ export const Gallary = () => {
           rowStart={{ base: 9, md: 3 }}
           rowEnd={{ base: 10, md: 4 }}
         >
-          <Image h="32" w="full" src={BottomRight} />
+          <Image h="full" w="full" src={BottomRight} />
         </GridItem>
       </Grid>
     </Flex>

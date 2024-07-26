@@ -32,7 +32,7 @@ export const Hero = () => {
       <Flex flexDirection={'column'} mt="24">
         <Text
           color="white"
-          fontSize={['52', '72']}
+          fontSize={['52', '48']}
           fontWeight={'700'}
           textTransform={'uppercase'}
         >

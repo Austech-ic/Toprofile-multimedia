@@ -41,8 +41,16 @@ export const Navbar = () => {
           gap="5"
           color={'white'}
         >
-          <Text>Services</Text>
-          <Text>Contact us</Text>
+          <Text color="white">
+            <a href="#service" color="white">
+              Services
+            </a>
+          </Text>
+          <Text color="white">
+            <a href="#contact" color="white">
+              Contact
+            </a>
+          </Text>
           <Button
             fontSize="xs"
             fontWeight={'400'}
@@ -51,7 +59,7 @@ export const Navbar = () => {
             borderRadius={'40'}
             color="white"
           >
-            Book now
+            <a href="#contact">Book now</a>
           </Button>
         </Flex>
       </Box>
@@ -67,7 +75,7 @@ export const Navbar = () => {
         <VStack
           display={{ base: 'flex', md: 'none' }}
           pos="absolute"
-          top="100%" // Adjusted to position below the navbar
+          top="20" // Adjusted to position below the navbar
           left="0"
           right="0"
           bg="gray.800"
@@ -76,8 +84,16 @@ export const Navbar = () => {
           spacing={4}
           boxShadow="md"
         >
-          <Text color="white">Services</Text>
-          <Text color="white">Contact us</Text>
+          <Text color="white">
+            <a href="#service" color="white">
+              Services
+            </a>
+          </Text>
+          <Text color="white">
+            <a href="#contact" color="white">
+              Contact
+            </a>
+          </Text>
           <Button
             fontSize="xs"
             fontWeight={'400'}
@@ -86,7 +102,7 @@ export const Navbar = () => {
             borderRadius={'40'}
             color="white"
           >
-            Book now
+            <a href="#contact">Book now</a>
           </Button>
         </VStack>
       )}
