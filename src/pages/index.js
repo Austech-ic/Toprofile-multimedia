@@ -7,7 +7,8 @@ import { Service } from './Service';
 import { Gallary } from './Gallary';
 import { Contact } from './Contact';
 import { Footer } from './Footer';
-import { Events } from './Events';
+import Events from './Events';
+
 export const MainScreen = () => {
   return (
     <Box>
