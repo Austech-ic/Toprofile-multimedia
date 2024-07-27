@@ -30,7 +30,7 @@ const Events = () => {
     );
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} style={{ overflow: 'hidden' }}>
       <Flex
         alignItems={'center'}
         flexDir={'column'}
@@ -38,6 +38,7 @@ const Events = () => {
         px={['10', '28']}
         py="20"
         my="20"
+        overflow={'hidden'}
       >
         {/* <Image src={Slide1} h="90%" w="100%" /> */}
         <Box w="fit-content" position={'relative'}>
@@ -59,7 +60,7 @@ const Events = () => {
             display={['flex', 'none']}
           />
         </Box>
-        <SimpleGrid mt="10" rowGap={'14'} gap="5" columns={['1', '4']}>
+        <SimpleGrid mt="10" rowGap={'10'} gap="5" columns={['1', '4']}>
           <Tag name="Carnival" />
           <Tag name="House Parties" />
           <Tag name="Wedding Receptions" />
@@ -79,6 +80,7 @@ const Events = () => {
         </SimpleGrid>
       </Flex>
       <Flex
+        overflow={'hidden'}
         alignItems={'center'}
         flexDir={'column'}
         bg="rgba(242, 242, 242, 1)"
@@ -106,7 +108,7 @@ const Events = () => {
             display={['flex', 'none']}
           />
         </Box>
-        <SimpleGrid mt="10" rowGap={'14'} gap="5" columns={['1', '4']}>
+        <SimpleGrid mt="10" rowGap={'10'} gap="5" columns={['1', '4']}>
           <Tag name="Matriculation" />
           <Tag name="Graduation" />
           <Tag name="Get-togethers " />
